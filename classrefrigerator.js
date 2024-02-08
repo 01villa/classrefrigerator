@@ -34,15 +34,15 @@ class Refrigerator {
             this.meal.splice(posicion, 1);
             alert(`${product} se ha eliminado de la refrigeradora`);
         } else {
-            alert('Producto agotado');
+            alert('no hay este producto');
         }
     }
 }
 
-let refri = new Refrigerator('indurama', 'blanca', '600 lbs', ["cerveza", "pollo", "leche", "huevos", "carne"]);
+let refri = new Refrigerator('indurama', 'blanca', '600 lbs', ["vegetales", "lacteos", "huevos", "carne", "fresas" ]);
 
 refri.showinfo();
-refri.compras(["jamon", "mortadela"]); 
+refri.compras(["chorizo", "mortadela"]); 
 refri.showProducts();
 
 refri.comida('carne'); 
